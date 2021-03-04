@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { style } from "./style.css";
 import cn from "classnames";
 import { Link } from "react-scroll";
+import InfoLine from "../InfoLine";
 
 function Header() {
   const [navbar, setNavbar] = useState("navbar");

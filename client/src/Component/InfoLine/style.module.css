@@ -1,0 +1,11 @@
+.infoLine {
+  margin-top: 70px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding: 0.875em 0.625em;
+  color: #41970d;
+  font-weight: 500;
+  background-color: #d5f2c4;
+  position: absolute;
+}

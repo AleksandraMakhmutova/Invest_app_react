@@ -1,71 +1,7 @@
-section {
-  padding: 100px 0;
-  background: #000000;
-}
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
-}
-
-section .title1 {
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
-}
-section .title1::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #111;
-  transform: translateX(-50%);
-}
-section .title1::after {
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  font-size: 20px;
-  color: #790683;
-  padding: 0 5px;
-  background: #fff;
-  transform: translateX(-50%);
-}
-
-section .title2 {
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
-}
-section .title2::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #111;
-  transform: translateX(-50%);
-}
-section .title2::after {
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  font-size: 20px;
-  color: #790683;
-  padding: 0 5px;
-  background: #fff;
-  transform: translateX(-50%);
 }
 
 /* navbar styling */
@@ -73,17 +9,18 @@ section .title2::after {
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: 19px 0;
+  padding: 15px 0;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
     0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
     0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
     0 100px 80px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
 }
 .navbar.sticky {
-  padding: 15px 0;
-  background: #790683c5;
+  padding: 13px 0;
+  background: #a0a0a0c5;
 }
 .navbar .max-width {
   display: flex;
@@ -91,12 +28,12 @@ section .title2::after {
   justify-content: space-between;
 }
 .navbar .logo a {
-  color: rgb(0, 0, 0);
+  color: rgb(6, 255, 6);
   font-size: 35px;
   font-weight: 600;
 }
 .navbar .logo a {
-  color: #000000;
+  color: rgb(6, 255, 6);
   transition: all 0.3s ease;
 }
 .navbar.sticky .logo a {

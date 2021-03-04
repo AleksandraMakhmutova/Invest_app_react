@@ -1,0 +1,35 @@
+.questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+/* responsive media query start */
+@media (max-width: 1300px) {
+}
+
+@media (max-width: 1104px) {
+}
+
+@media (max-width: 991px) {
+}
+@media (max-width: 947px) {
+}
+
+@media (max-width: 690px) {
+  .questions {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .questions {
+    display: flex;
+    flex-direction: column;
+  }
+}
