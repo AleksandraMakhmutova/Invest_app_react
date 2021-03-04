@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { style } from "./style.css";
-import cn from "classnames";
+import style from "./style.module.css";
 import { Link } from "react-scroll";
-import InfoLine from "../InfoLine";
+import cn from "classnames";
 
 function Header() {
   const [navbar, setNavbar] = useState("navbar");
   const [menu, setMenu] = useState("menu");
-  const [iActive, setIActive] = useState("fas fa-bars");
+  const [isActive, setIsActive] = useState("");
+  const [sticky, setSticky] = useState("");
 
-  //скролл эффект
   const listenScrolEvent = (event) => {
     if (window.scrollY > 20) {
-      return setNavbar("navbar sticky");
+      return setSticky("sticky");
     } else {
-      return setNavbar("navbar");
+      return setSticky("");
     }
   };
 
@@ -25,47 +24,81 @@ function Header() {
 
   const handleChange = (e) => {
     if (menu === "menu") {
-      setIActive("fas fa-bars active");
+      setIsActive("active");
       setMenu("menu active");
     } else if (menu === "menu active") {
-      setIActive("fas fa-bars");
+      setIsActive("");
       setMenu("menu");
     }
   };
 
   return (
     <>
-      <nav className={navbar} style={style}>
-        <div className="max-width">
-          <div className="logo">
-            <Link to="#">Logo</Link>
+      <nav className={cn(style.navbar, sticky !== "" && style.sticky)}>
+        <div className={style.maxWidth}>
+          <div className={style.logo}>
+            <div className={style.logoImg}>
+              <div className={style.logoMargin}>
+                <Link to="#">Invest</Link>
+              </div>
+            </div>
           </div>
-          <ul className={menu} style={style}>
+
+          <ul className={cn(style.menu, isActive === "active" && style.active)}>
             <li>
-              <Link to="home" className="menu-btn" onClick={handleChange}>
-                Home
+              <Link
+                to="Dachboard"
+                className={style.menuBtn}
+                onClick={handleChange}
+              >
+                Dachboard
               </Link>
             </li>
             <li>
-              <Link to="about" className="menu-btn" onClick={handleChange}>
-                SomeInfo
+              <Link
+                to="Reports"
+                className={style.menuBtn}
+                onClick={handleChange}
+              >
+                Reports
               </Link>
             </li>
             <li>
-              <Link to="services" className="menu-btn" onClick={handleChange}>
-                SomeInfo
+              <Link
+                to="Support"
+                className={style.menuBtn}
+                onClick={handleChange}
+              >
+                Support
               </Link>
             </li>
             <li>
-              <Link to="skills" className="menu-btn" onClick={handleChange}>
-                SomeInfo
+              <Link
+                to="Settings"
+                className={style.menuBtn}
+                onClick={handleChange}
+              >
+                Settings
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="contacts"
+                className={style.menuBtn}
+                onClick={handleChange}
+              >
+                Contacts
               </Link>
             </li>
           </ul>
           <ul></ul>
 
-          <div className="menu-btn" onClick={handleChange}>
-            <i className={iActive}></i>
+          <div className={style.menuBtn} onClick={handleChange}>
+            {isActive ? (
+              <i class="fas fa-times"></i>
+            ) : (
+              <i className="fas fa-bars"></i>
+            )}
           </div>
         </div>
       </nav>

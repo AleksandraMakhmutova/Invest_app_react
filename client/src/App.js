@@ -5,6 +5,7 @@ import Header from "./Component/Header";
 import PageForm from "./Component/PageForm";
 import BackAndHeader from "./Component/BackAndHeader";
 import MessagePart from "./Component/MessagePart";
+import UnderContactsPart from "./Component/UnderContactsPart";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <BackAndHeader />
         <PageForm />
         <MessagePart />
+        <UnderContactsPart />
       </div>
     </>
   );
