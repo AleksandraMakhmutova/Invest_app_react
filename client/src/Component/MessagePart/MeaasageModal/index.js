@@ -6,71 +6,31 @@ export default function MeaasageModal(props) {
   const [statusBtn, setStatusBtn] = useState(true);
 
   const [inputs, setInputs] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
     phone: "",
     description: "",
   });
 
-  const [address, setAddress] = useState({
-    streetAddress: "",
-    city: "",
-    state: "",
-    zip: "",
-  });
-
-  const { firstName, lastName, email, phone, description } = inputs;
-  const { streetAddress, city, state, zip } = address;
+  const { name, email, phone, description } = inputs;
 
   const handleChange = ({ target: { name, value } }) => {
     setInputs({
       ...inputs,
       [name]: value,
     });
-    setAddress({
-      ...address,
-      [name]: value,
-    });
-    if (
-      firstName &&
-      lastName &&
-      email &&
-      phone &&
-      streetAddress &&
-      city &&
-      state &&
-      zip &&
-      description
-    ) {
+    if (name && email && phone && description) {
       setStatusBtn(false);
     }
   };
 
   const handleSubmit = () => {
-    props.addNewUser(
-      firstName,
-      lastName,
-      email,
-      phone,
-      streetAddress,
-      city,
-      state,
-      zip,
-      description
-    );
+    props.addNewUser(name, email, phone, description);
     setInputs({
-      firstName: "",
-      lastName: "",
+      name: "",
       email: "",
       phone: "",
       description: "",
-    });
-    setAddress({
-      streetAddress: "",
-      city: "",
-      state: "",
-      zip: "",
     });
     props.onHide();
     setStatusBtn(true);
@@ -86,61 +46,19 @@ export default function MeaasageModal(props) {
       >
         <Modal.Header>
           <Modal.Title id="contained-modal-title-vcenter">
-            Добавить пользователя в список
+            Sending message us
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Введите данные</h4>
+          <h4>Fill all the lines</h4>
           <Form>
             <Row>
               <Col>
                 <Form.Control
                   placeholder="First name"
                   onChange={handleChange}
-                  name="firstName"
-                  value={firstName}
-                />
-              </Col>
-              <Col>
-                <Form.Control
-                  placeholder="Last name"
-                  onChange={handleChange}
-                  name="lastName"
-                  value={lastName}
-                />
-              </Col>
-            </Row>
-            <Row className="mt-2">
-              <Col>
-                <Form.Control
-                  placeholder="Street address"
-                  onChange={handleChange}
-                  name="streetAddress"
-                  value={streetAddress}
-                />
-              </Col>
-              <Col>
-                <Form.Control
-                  placeholder="Zip"
-                  onChange={handleChange}
-                  name="zip"
-                  value={zip}
-                />
-              </Col>
-              <Col>
-                <Form.Control
-                  placeholder="City"
-                  onChange={handleChange}
-                  name="city"
-                  value={city}
-                />
-              </Col>
-              <Col>
-                <Form.Control
-                  placeholder="State"
-                  onChange={handleChange}
-                  name="state"
-                  value={state}
+                  name="name"
+                  value={name}
                 />
               </Col>
             </Row>
@@ -179,14 +97,14 @@ export default function MeaasageModal(props) {
         <Modal.Footer>
           {statusBtn ? (
             <Button variant="success" disabled>
-              + Добавить
+              Send
             </Button>
           ) : (
             <Button variant="success" onClick={handleSubmit}>
-              + Добавить
+              Send
             </Button>
           )}{" "}
-          <Button onClick={props.onHide}>Отмена</Button>
+          <Button onClick={props.onHide}>Cansel</Button>
         </Modal.Footer>
       </Modal>
     </>

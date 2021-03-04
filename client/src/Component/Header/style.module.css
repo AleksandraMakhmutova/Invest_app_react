@@ -34,7 +34,7 @@
   background-image: url("./icon.png");
 }
 .logoMargin {
-  padding-top: 25px;
+  padding-top: 10px;
   padding-left: 5px;
 }
 .navbar .logo a {
@@ -53,6 +53,9 @@
   list-style: none;
   display: inline-block;
 }
+.menu {
+  margin-top: 15px;
+}
 .navbar .menu li a {
   display: block;
   color: rgb(0, 0, 0);
@@ -62,7 +65,10 @@
   transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-  color: #000000;
+  color: #0011ff;
+  margin-top: 2px;
+  text-decoration: rgba(255, 255, 255, 0);
+  border-bottom: 2px solid blue;
 }
 .navbar.sticky .menu li a:hover {
   color: rgb(0, 0, 0);
