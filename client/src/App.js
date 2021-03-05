@@ -1,22 +1,36 @@
 import React from "react";
-import style from "./App.css";
-import Header from "./Component/Header";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
+import style from "./App.css";
+
+import Header from "./Component/Header";
 import PageForm from "./Component/PageForm";
 import BackAndHeader from "./Component/BackAndHeader";
 import MessagePart from "./Component/MessagePart";
 import UnderContactsPart from "./Component/UnderContactsPart";
+import Dashboard from "./Component/Dashboard";
 function App() {
   return (
     <>
-      <div className={style.conteiner}>
-        <Header />
-
-        <BackAndHeader />
-        <PageForm />
-        <MessagePart />
-        <UnderContactsPart />
-      </div>
+      <BrowserRouter>
+        <div className={style.conteiner}>
+          <Header />
+          <Switch>
+            <Route exact path="/questions">
+              <BackAndHeader />
+              <PageForm />
+            </Route>
+            <Route exact path="/dashboard">
+              <Dashboard />
+            </Route>
+            <Route path="/">
+              <Redirect to="/" />
+            </Route>
+          </Switch>
+          <MessagePart />
+          <UnderContactsPart />
+        </div>
+      </BrowserRouter>
     </>
   );
 }

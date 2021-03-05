@@ -104,7 +104,7 @@ export default function MeaasageModal(props) {
               Send
             </Button>
           )}{" "}
-          <Button onClick={props.onHide}>Cansel</Button>
+          <Button onClick={props.onHide}>Cancel</Button>
         </Modal.Footer>
       </Modal>
     </>

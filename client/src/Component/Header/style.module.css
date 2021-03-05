@@ -53,9 +53,9 @@
   list-style: none;
   display: inline-block;
 }
-.menu {
+/* .menu {
   margin-top: 15px;
-}
+} */
 .navbar .menu li a {
   display: block;
   color: rgb(0, 0, 0);
@@ -151,7 +151,16 @@
   }
   .navbar .menu li a {
     display: inline-block;
-    margin: 20px 0;
+    margin-left: 20px;
+    font-size: 25px;
+    color: rgb(180, 180, 180);
+    margin-bottom: 20px;
+  }
+
+  .navbar .menu li a:hover {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
     font-size: 25px;
     color: rgb(180, 180, 180);
   }

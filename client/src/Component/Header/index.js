@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import style from "./style.module.css";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import cn from "classnames";
-
+import { Link } from "react-router-dom";
 function Header() {
   const [navbar, setNavbar] = useState("navbar");
   const [menu, setMenu] = useState("menu");
@@ -39,7 +39,7 @@ function Header() {
           <div className={style.logo}>
             <div className={style.logoImg}>
               <div className={style.logoMargin}>
-                <Link to="#">Invest</Link>
+                <Link to="/">Invest</Link>
               </div>
             </div>
           </div>
@@ -47,16 +47,16 @@ function Header() {
           <ul className={cn(style.menu, isActive === "active" && style.active)}>
             <li>
               <Link
-                to="Dachboard"
+                to="/dashboard"
                 className={style.menuBtn}
                 onClick={handleChange}
               >
-                Dachboard
+                Dashboard
               </Link>
             </li>
             <li>
               <Link
-                to="Reports"
+                to="/reports"
                 className={style.menuBtn}
                 onClick={handleChange}
               >
@@ -65,7 +65,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="Support"
+                to="/support"
                 className={style.menuBtn}
                 onClick={handleChange}
               >
@@ -74,7 +74,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="Settings"
+                to="/settings"
                 className={style.menuBtn}
                 onClick={handleChange}
               >
@@ -83,7 +83,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="contacts"
+                to="/contacts"
                 className={style.menuBtn}
                 onClick={handleChange}
               >

@@ -14,7 +14,7 @@ export default function BackAndHeader() {
           <div>Select your investion frame</div>
         </div>
         <div className={style.cardBackandHeader}>
-          <h2>What would you do if the market takes a downturn</h2>
+          <h2>What would you do if the market takes a downturn?</h2>
         </div>
       </div>
     </>
