@@ -1,7 +1,8 @@
 .conteiner {
-  width: 70%;
   height: 100%;
-  background-color: rgb(83, 83, 83);
+  box-sizing: content-box;
+  width: 70%;
+  padding-top: 100px;
 }
 
 @media (max-width: 690px) {
