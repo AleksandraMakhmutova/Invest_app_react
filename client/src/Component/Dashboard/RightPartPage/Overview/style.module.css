@@ -1,0 +1,12 @@
+.owerviewOpen {
+  text-align: center;
+}
+
+.closePart {
+  display: none;
+}
+
+.money {
+  margin-top: 30px;
+  color: rgb(104, 207, 0);
+}
