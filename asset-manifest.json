@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Invest_app_react/static/css/main.071aa352.chunk.css",
-    "main.js": "/Invest_app_react/static/js/main.9cbca335.chunk.js",
-    "main.js.map": "/Invest_app_react/static/js/main.9cbca335.chunk.js.map",
+    "main.css": "/Invest_app_react/static/css/main.52ebd7e1.chunk.css",
+    "main.js": "/Invest_app_react/static/js/main.de3268b6.chunk.js",
+    "main.js.map": "/Invest_app_react/static/js/main.de3268b6.chunk.js.map",
     "runtime-main.js": "/Invest_app_react/static/js/runtime-main.fc5f6741.js",
     "runtime-main.js.map": "/Invest_app_react/static/js/runtime-main.fc5f6741.js.map",
     "static/css/2.150d169a.chunk.css": "/Invest_app_react/static/css/2.150d169a.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.76a0c968.chunk.js.map": "/Invest_app_react/static/js/2.76a0c968.chunk.js.map",
     "index.html": "/Invest_app_react/index.html",
     "static/css/2.150d169a.chunk.css.map": "/Invest_app_react/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.071aa352.chunk.css.map": "/Invest_app_react/static/css/main.071aa352.chunk.css.map",
+    "static/css/main.52ebd7e1.chunk.css.map": "/Invest_app_react/static/css/main.52ebd7e1.chunk.css.map",
     "static/js/2.76a0c968.chunk.js.LICENSE.txt": "/Invest_app_react/static/js/2.76a0c968.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fc5f6741.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.76a0c968.chunk.js",
-    "static/css/main.071aa352.chunk.css",
-    "static/js/main.9cbca335.chunk.js"
+    "static/css/main.52ebd7e1.chunk.css",
+    "static/js/main.de3268b6.chunk.js"
   ]
 }
