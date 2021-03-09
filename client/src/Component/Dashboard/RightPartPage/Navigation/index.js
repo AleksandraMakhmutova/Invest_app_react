@@ -10,25 +10,33 @@ export default function Navigation({ handleNav }) {
   };
 
   return (
-    <div className={style.navigation}>
-      <Nav fill variant="tabs" defaultActiveKey="/home">
-        <Nav.Item>
-          <Nav.Link eventKey="link-1" onClick={handleChose} id="overview">
-            Overview
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="link-2" id="projections" onClick={handleChose}>
-            Projections
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="link-3" id="allocation" onClick={handleChose}>
-            Allocation
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item></Nav.Item>
-      </Nav>
-    </div>
+    <>
+      <div className={style.navigation}>
+        <div>
+          <Nav fill variant="tabs" defaultActiveKey="/home">
+            <Nav.Item>
+              <Nav.Link eventKey="link-1" onClick={handleChose} id="overview">
+                Overview
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                eventKey="link-2"
+                id="projections"
+                onClick={handleChose}
+              >
+                Projections
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-3" id="allocation" onClick={handleChose}>
+                Allocation
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item></Nav.Item>
+          </Nav>
+        </div>
+      </div>
+    </>
   );
 }

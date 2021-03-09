@@ -1,0 +1,32 @@
+.progectionsOpen {
+  box-sizing: content-box;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #ecf0f3;
+  width: 100%;
+}
+
+.description {
+  width: 100%;
+
+  border-radius: initial;
+  background-color: rgba(172, 223, 223, 0.212);
+  padding: 10px;
+}
+.closePart {
+  display: none;
+}
+
+.form {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+p {
+  margin-top: 10px;
+}
+.input {
+  margin: 10px;
+  margin-bottom: 20px;
+  width: 400px;
+}

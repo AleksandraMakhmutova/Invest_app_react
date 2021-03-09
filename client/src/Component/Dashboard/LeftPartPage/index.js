@@ -19,6 +19,7 @@ export default function LeftPartPage() {
         <p>Income portfolio</p>
         <p>Find out more</p>
       </div>
+      
     </div>
   );
 }

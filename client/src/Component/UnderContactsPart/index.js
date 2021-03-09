@@ -4,12 +4,12 @@ export default function UnderContactsPart() {
   return (
     <div className={style.conteiner}>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-        eligendi et. Illo eius sequi officiis soluta laudantium aperiam tenetur
-        ratione iste voluptatum molestias ab illum eos fugiat sunt quo commodi
-        perspiciatis mollitia, facere repudiandae minus animi inventore corrupti
-        accusamus nesciunt! Quod voluptatem ut illum eaque sunt aliquid, odit
-        quasi nihil?
+        Your cash and investments are held separately from InvestEngine in
+        pooled client accounts at NatWest and the Crest securities depository,
+        providing further protection. Learn more InvestEngine does not provide
+        investment advice, or give recommendations. If you are unsure of the
+        risk or suitability of an investment, you should seek advice from an
+        independent financial adviser.
       </p>
     </div>
   );

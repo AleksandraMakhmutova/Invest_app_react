@@ -1,3 +1,37 @@
 .navigation {
   margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.btn {
+  margin-top: 2px;
+}
+
+input {
+  border-radius: 5px;
+}
+
+@media (max-width: 690px) {
+  .btn {
+    margin-left: 80px;
+  }
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+  input:focus {
+    border-color: blue;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    margin-left: 80px;
+  }
+
+  input:focus {
+    border-color: blue;
+  }
 }
