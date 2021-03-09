@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "react-scroll";
+
 import InfoLine from "../InfoLine";
 import style from "./style.module.css";
 import { Link } from "react-router-dom";
