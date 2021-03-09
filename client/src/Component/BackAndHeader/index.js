@@ -9,7 +9,7 @@ export default function BackAndHeader() {
       <InfoLine />
       <div className={style.cardHeader}>
         <div className={style.button}>
-          <Link to="/Invest_app_react/dashboard">
+          <Link to="invest_app_react/dashboard">
             <div className={style.arrow}>
               <i class="fas fa-arrow-alt-circle-left"></i>
             </div>
