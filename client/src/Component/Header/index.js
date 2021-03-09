@@ -47,7 +47,7 @@ function Header() {
           <ul className={cn(style.menu, isActive === "active" && style.active)}>
             <li>
               <Link
-                to="/dashboard"
+                to="/invest_app_react/dashboard"
                 className={style.menuBtn}
                 onClick={handleChange}
               >
@@ -56,7 +56,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="/questions"
+                to="/invest_app_react/questions"
                 className={style.menuBtn}
                 onClick={handleChange}
               >
@@ -65,7 +65,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="/support"
+                to="/invest_app_react/support"
                 className={style.menuBtn}
                 onClick={handleChange}
               >
@@ -74,7 +74,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="/settings"
+                to="/invest_app_react/settings"
                 className={style.menuBtn}
                 onClick={handleChange}
               >
@@ -83,7 +83,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="/contacts"
+                to="/invest_app_react/contacts"
                 className={style.menuBtn}
                 onClick={handleChange}
               >
