@@ -56,7 +56,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="/reports"
+                to="/questions"
                 className={style.menuBtn}
                 onClick={handleChange}
               >

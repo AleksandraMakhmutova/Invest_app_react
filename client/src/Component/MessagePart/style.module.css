@@ -21,6 +21,9 @@ small {
   color: rgb(134, 134, 134);
 }
 
+.textBtn{
+  line-height: 0.2;
+}
 .inConteiner {
   display: flex;
   flex-direction: row;

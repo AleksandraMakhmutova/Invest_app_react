@@ -31,7 +31,8 @@ export default function MessagePart() {
             type="button"
             onClick={() => setModalShow(true)}
           >
-            <i class="far fa-envelope"></i> Send us a message
+            <i class="far fa-envelope"></i>{" "}
+            <h6 className={style.textBtn}>Send us a message</h6>
           </button>
         </div>
       </div>
