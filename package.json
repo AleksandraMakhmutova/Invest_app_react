@@ -1,5 +1,5 @@
 {
-  "name": "invest_app_react",
+  "name": "Invest_app_react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,5 +25,5 @@
   "devDependencies": {
     "nodemon": "^2.0.7"
   },
-  "homepage": "https://aleksandramakhmutova.github.io/invest_app_react/"
+  "homepage": "https://aleksandramakhmutova.github.io/Invest_app_react/"
 }
