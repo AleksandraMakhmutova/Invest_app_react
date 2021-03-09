@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AleksandraMakhmutova/Invest_app_react.git"
+    "url": "git+https://github.com/AleksandraMakhmutova/invest_app_react.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AleksandraMakhmutova/Invest_app_react/issues"
+    "url": "https://github.com/AleksandraMakhmutova/invest_app_react/issues"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
