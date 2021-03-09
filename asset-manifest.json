@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Invest_app_react/static/css/main.071aa352.chunk.css",
+    "main.js": "/Invest_app_react/static/js/main.abcf7d94.chunk.js",
+    "main.js.map": "/Invest_app_react/static/js/main.abcf7d94.chunk.js.map",
+    "runtime-main.js": "/Invest_app_react/static/js/runtime-main.fc5f6741.js",
+    "runtime-main.js.map": "/Invest_app_react/static/js/runtime-main.fc5f6741.js.map",
+    "static/css/2.150d169a.chunk.css": "/Invest_app_react/static/css/2.150d169a.chunk.css",
+    "static/js/2.b9e5ae40.chunk.js": "/Invest_app_react/static/js/2.b9e5ae40.chunk.js",
+    "static/js/2.b9e5ae40.chunk.js.map": "/Invest_app_react/static/js/2.b9e5ae40.chunk.js.map",
+    "index.html": "/Invest_app_react/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/Invest_app_react/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.071aa352.chunk.css.map": "/Invest_app_react/static/css/main.071aa352.chunk.css.map",
+    "static/js/2.b9e5ae40.chunk.js.LICENSE.txt": "/Invest_app_react/static/js/2.b9e5ae40.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc5f6741.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.b9e5ae40.chunk.js",
+    "static/css/main.071aa352.chunk.css",
+    "static/js/main.abcf7d94.chunk.js"
+  ]
+}
