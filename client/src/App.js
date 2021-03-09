@@ -16,11 +16,11 @@ function App() {
         <div className={style.conteiner}>
           <Header />
           <Switch>
-            <Route path="/invest_app_react/questions">
+            <Route path="/questions">
               <BackAndHeader />
               <PageForm />
             </Route>
-            <Route path="/invest_app_react/dashboard">
+            <Route path="/dashboard">
               <Dashboard />
             </Route>
             <Route exact path="/">
