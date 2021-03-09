@@ -23,7 +23,7 @@ function App() {
             <Route path="/invest_app_react/dashboard">
               <Dashboard />
             </Route>
-            <Route path="/">
+            <Route exact path="/">
               <Redirect to="/" />
             </Route>
           </Switch>
