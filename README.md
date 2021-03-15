@@ -1,3 +1,3 @@
 # Getting Started 
 
-https://aleksandramakhmutova.github.io/Invest_app_react/dashboard
+https://aleksandramakhmutova.github.io/Invest_app_react
